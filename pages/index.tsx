@@ -69,7 +69,7 @@ export default function Home() {
         Site under construction, please check back later :)
       </div>
 
-      <footer className="fixed right-2 bottom-1 w-full font-body text-main-dark-gray dark:text-white opacity-80 text-xs text-right">
+      <footer className="fixed right-2 bottom-1 w-full font-body text-main-dark-gray dark:text-white opacity-100 dark:opacity-60 text-xs text-right">
         Icons graciously provided by <a href="https://fontawesome.com/license" target="_blank" rel="noreferrer" className="underline">FontAwesome</a>
       </footer>
     </div>

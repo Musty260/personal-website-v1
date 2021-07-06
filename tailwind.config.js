@@ -11,7 +11,11 @@ module.exports = {
         "body": ['"Montserrat Alternates"']
       },
       height: {
-        "icon-size": "100px",
+        "100px": "100px",
+      },
+      backgroundImage: {
+        "light-bulb": "url('/LightBulb_1.png')",
+        "light-bulb-dark": "url('/LightBulbDark_1.png')",
       },
       animation:{
         "gif": "giffy 0.9s infinite steps(1)",
