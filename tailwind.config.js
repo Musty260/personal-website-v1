@@ -41,7 +41,9 @@ module.exports = {
   },
   variants: {
     extend: {
-      animation: ["hover"],
+      animation: ["hover", "dark"],
+      backgroundImage: ["dark"],
+      opacity: ["dark"],
     },
   },
   plugins: [],
