@@ -61,9 +61,6 @@ export default function Home() {
         <a href="https://twitter.com/Musty260" target="_blank" rel="noreferrer">
           <Twitter theme={theme}/>
         </a>
-        <a href="https://discordapp.com/users/237446343617019904" target="_blank" rel="noreferrer">
-          <Discord theme={theme}/>
-        </a>
       </div>
 
       <div className="h-10"/>
