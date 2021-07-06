@@ -16,6 +16,8 @@ module.exports = {
       animation:{
         "gif": "giffy 0.9s infinite steps(1)",
         "gif-dark": "giffyDark 0.9s infinite steps(1)",
+        "pause-on-hover": "giffy 0.9s infinite steps(1) paused",
+        "pause-on-hover-dark": "giffyDark 0.9s infinite steps(1) paused",
       },
       keyframes: {
         giffy: {
@@ -34,7 +36,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      animation: ["hover"],
+    },
   },
   plugins: [],
 }

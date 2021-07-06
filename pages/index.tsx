@@ -29,13 +29,13 @@ export default function Home() {
 
       <div 
         style={{ backgroundImage: "url(/LightBulb_1.png)", backgroundRepeat:"no-repeat",  backgroundPosition:"center", backgroundSize:"cover", width:"97px", height:"226px", display: theme == "dark" ? "none" : "block" }}
-        className="animate-gif fixed right-64 cursor-pointer"
+        className="animate-gif hover:animate-pause-on-hover fixed right-64 cursor-pointer"
         onClick={() => setTheme("dark")}
         id="lightBulb"
       />
       <div 
         style={{ backgroundImage: "url(/LightBulbDark_1.png)", backgroundRepeat:"no-repeat",  backgroundPosition:"center", backgroundSize:"cover", width:"97px", height:"226px", display: theme == "light" ? "none" : "block" }}
-        className="animate-gif-dark fixed right-64 cursor-pointer"
+        className="animate-gif-dark hover:animate-pause-on-hover-dark fixed right-64 cursor-pointer"
         onClick={() => setTheme("light")}
         id="lightBulbDark"
       />
@@ -69,7 +69,7 @@ export default function Home() {
         Site under construction, please check back later :)
       </div>
 
-      <footer className="fixed right-2 bottom-1 w-full font-body text-main-dark-gray dark:text-white opacity-60 text-xs text-right">
+      <footer className="fixed right-2 bottom-1 w-full font-body text-main-dark-gray dark:text-white opacity-80 text-xs text-right">
         Icons graciously provided by <a href="https://fontawesome.com/license" target="_blank" rel="noreferrer" className="underline">FontAwesome</a>
       </footer>
     </div>
