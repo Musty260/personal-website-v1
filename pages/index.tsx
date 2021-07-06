@@ -20,24 +20,17 @@ export default function Home() {
   if (!mounted) return null
 
   return (
-    <div className="h-screen w-screen bg-white dark:bg-main-dark-gray">
+    <div className="w-full h-full">
 
       <Head>
         <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet"/>
       </Head>
 
       <div 
-        style={{ backgroundImage: "url(/LightBulb_1.png)", backgroundRepeat:"no-repeat",  backgroundPosition:"center", backgroundSize:"cover", width:"97px", height:"226px", display: theme == "dark" ? "none" : "block" }}
-        className="animate-gif hover:animate-pause-on-hover fixed right-64 cursor-pointer"
-        onClick={() => setTheme("dark")}
-        id="lightBulb"
-      />
-      <div 
-        style={{ backgroundImage: "url(/LightBulbDark_1.png)", backgroundRepeat:"no-repeat",  backgroundPosition:"center", backgroundSize:"cover", width:"97px", height:"226px", display: theme == "light" ? "none" : "block" }}
-        className="animate-gif-dark hover:animate-pause-on-hover-dark fixed right-64 cursor-pointer"
-        onClick={() => setTheme("light")}
-        id="lightBulbDark"
+        style={{ width:"97px", height:"226px" }}
+        className="animate-gif hover:animate-pause-on-hover bg-light-bulb dark:animate-gif-dark dark:hover:animate-pause-on-hover-dark dark:bg-light-bulb-dark fixed right-64 cursor-pointer bg-no-repeat bg-center bg-cover"
+        onClick={() => setTheme( theme == "dark" ? "light" : "dark" )}
       />
 
       <div className="h-72"/>
