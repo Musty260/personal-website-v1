@@ -52,7 +52,7 @@ module.exports = {
       animation: ["hover", "dark"],
       backgroundImage: ["dark"],
       opacity: ["dark"],
-      margin: ["even"],
+      margin: ["odd"],
     },
   },
   plugins: [],
