@@ -19,6 +19,22 @@ export default function Home() {
     <div>
 
       <Head>
+        <title>Mustafa Chaudhry</title>
+
+        <meta name="description" content="Computers yes mmmm"/>
+        <meta name="keywords" content="mustafa, chaudhry, mustafa chaudhry, musty, musty260, british, england, english, derby, derbyshire, uk, united kingdom, designer, figma, photoshop, graphic design, graphic designer, graphic, illustrator, adobe, developer, design, coder, code, programmer, programming, html, css, js, javascript, ts, typescript, react, next, nexjs, vercel"/>
+        <meta name="author" content="Mustafa Chaudhry"/>
+
+        <meta property="og:url" content="https://musty.tech"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Mustafa Chaudhry"/>
+        <meta property="og:description" content="Computers yes mmmm"/>
+        <meta property="og:image" content="/og-image.jpg"/>
+
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="@musty260"/>
+        <meta name="twitter:creator" content="@musty260"/>
+
         <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet"/>
       </Head>
