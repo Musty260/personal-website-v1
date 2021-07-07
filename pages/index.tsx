@@ -5,11 +5,7 @@ import { useEffect, useState } from "react";
 
 import { useTheme } from "next-themes";
 
-import Email from "../components/social-icons/email";
-import GitHub from "../components/social-icons/github";
-import LinkedIn from "../components/social-icons/linkedin";
-import Twitter from "../components/social-icons/twitter";
-import Discord from "../components/social-icons/discord";
+import IconRow from '../components/social-icon-row/iconrow';
 
 export default function Home() {
   const { theme, setTheme } = useTheme()
@@ -20,7 +16,7 @@ export default function Home() {
   if (!mounted) return null
 
   return (
-    <div className="w-full h-full">
+    <div>
 
       <Head>
         <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"/>
@@ -28,37 +24,36 @@ export default function Home() {
       </Head>
 
       <div 
-        style={{ width:"97px", height:"226px" }}
-        className="animate-gif hover:animate-pause-on-hover bg-light-bulb dark:animate-gif-dark dark:hover:animate-pause-on-hover-dark dark:bg-light-bulb-dark fixed right-64 cursor-pointer bg-no-repeat bg-center bg-cover"
+        style={{ width:"97px", height:"226px", WebkitTapHighlightColor: "transparent" }}
+        className="animate-gif md:hover:animate-pause-on-hover bg-light-bulb dark:animate-gif-dark md:dark:hover:animate-pause-on-hover-dark dark:bg-light-bulb-dark fixed right-1/2 md:right-64 transform md:transform-none translate-x-1/2 md:translate-x-0 cursor-pointer bg-no-repeat bg-center bg-cover scale-60 -top-45px md:top-0"
         onClick={() => setTheme( theme == "dark" ? "light" : "dark" )}
       />
 
-      <div className="h-72"/>
+      <div className="h-72 hidden md:block"/>
 
-      <div className="font-title dark:text-white text-main-dark-gray text-9xl tracking-widest table mx-auto">
+      <div className="font-title dark:text-white text-main-dark-gray text-9xl tracking-widest mx-auto hidden md:table">
+        Musty
+      </div>
+      <div className="font-title dark:text-white text-main-dark-gray text-9xl tracking-widest fixed top-35% left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:hidden scale-50">
         Musty
       </div>
 
-      <div className="h-36"/>
+      <div className="h-36 hidden md:block"/>
 
-      <div className="flex justify-evenly px-96">
-        <a href="mailto:mustyco260@gmail.com" target="_blank" rel="noreferrer">
-          <Email theme={theme}/>
-        </a>
-        <a href="https://github.com/musty260/" target="_blank" rel="noreferrer">
-          <GitHub theme={theme}/>
-        </a>
-        <a href="https://www.linkedin.com/in/mustafa-chaudhry/" target="_blank" rel="noreferrer">
-          <LinkedIn theme={theme}/>
-        </a>
-        <a href="https://twitter.com/Musty260" target="_blank" rel="noreferrer">
-          <Twitter theme={theme}/>
-        </a>
+      <div className="md:flex justify-evenly px-96 hidden">
+        <IconRow theme={theme}/>
       </div>
+      <div className="flex justify-evenly px-96 md:hidden fixed top-57% left-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-50">
+        <IconRow theme={theme}/>
+      </div>
+      
 
-      <div className="h-10"/>
+      <div className="h-10 hidden md:block"/>
 
-      <div className="font-body text-main-dark-gray dark:text-white mx-auto table">
+      <div className="font-body text-main-dark-gray dark:text-white mx-auto hidden md:table">
+        Site under construction, please check back later :)
+      </div>
+      <div className="font-body text-main-dark-gray dark:text-white mx-auto fixed md:hidden text-center top-3/4 px-4">
         Site under construction, please check back later :)
       </div>
 

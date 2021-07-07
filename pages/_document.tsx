@@ -4,9 +4,11 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
-        <Head />
-        <body className="h-screen w-screen bg-white dark:bg-main-dark-gray overflow-auto">
+      <Html className="overflow-x-hidden">
+        <Head>
+            <link rel="shortcut icon" href="/PersonalSiteIcon.ico"/>
+        </Head>
+        <body className="h-screen w-screen bg-white dark:bg-main-dark-gray overflow-x-hidden relative">
           <Main />
           <NextScript />
         </body>

@@ -17,6 +17,14 @@ module.exports = {
         "light-bulb": "url('/LightBulb_1.png')",
         "light-bulb-dark": "url('/LightBulbDark_1.png')",
       },
+      inset: {
+        "-45px": "-45px",
+        "57%": "57%",
+        "35%": "35%",
+      },
+      scale: {
+        "60": "0.6",
+      },
       animation:{
         "gif": "giffy 0.9s infinite steps(1)",
         "gif-dark": "giffyDark 0.9s infinite steps(1)",
