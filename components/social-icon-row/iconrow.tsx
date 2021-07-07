@@ -27,9 +27,11 @@ export default function IconRow({theme}: IconProps) {
             <a href="https://www.linkedin.com/in/mustafa-chaudhry/" target="_blank" rel="noreferrer" style={{ WebkitTapHighlightColor: "transparent" }} className="even:mt-24 md:even:mt-0">
                 <LinkedIn theme={theme}/>
             </a>
+            {/**
             <a href="https://twitter.com/Musty260" target="_blank" rel="noreferrer" style={{ WebkitTapHighlightColor: "transparent" }} className="even:mt-24 md:even:mt-0">
                 <Twitter theme={theme}/>
             </a>
+            */}
         </>
     )
 }
