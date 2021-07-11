@@ -47,12 +47,16 @@ export default function Home() {
 
       <div className="h-72 hidden md:block"/>
 
+      <div className="h-title md:h-title-desktop w-5/6 mx-auto bg-title bg-no-repeat bg-center bg-contain fixed md:static left-1/2 top-1/3 transform md:transform-none -translate-x-1/2 -translate-y-1/2 animate-title dark:animate-title-dark"/>
+
+      {/** 64 high on mobile, 128 on desktop
       <div className="font-title dark:text-white text-main-dark-gray text-9xl tracking-widest mx-auto hidden md:table">
         Musty
       </div>
       <div className="font-title dark:text-white text-main-dark-gray text-9xl tracking-widest fixed top-35% left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:hidden scale-50">
         Musty
       </div>
+      */}
 
       <div className="h-36 hidden md:block"/>
 
