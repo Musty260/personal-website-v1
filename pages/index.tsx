@@ -22,14 +22,14 @@ export default function Home() {
         <title>Mustafa Chaudhry</title>
 
         <meta name="description" content="Computers yes mmmm"/>
-        <meta name="keywords" content="mustafa, chaudhry, mustafa chaudhry, musty, musty260, british, england, english, derby, derbyshire, uk, united kingdom, designer, figma, photoshop, graphic design, graphic designer, graphic, illustrator, adobe, developer, design, coder, code, programmer, programming, html, css, js, javascript, ts, typescript, react, next, nexjs, vercel"/>
+        <meta name="keywords" content="mustafa, chaudhry, mustafa chaudhry, musty, musty260, british, england, english, derby, derbyshire, uk, united kingdom, designer, figma, photoshop, graphic design, graphic designer, graphic, illustrator, adobe, developer, design, coder, code, awooga, programmer, programming, html, css, js, javascript, ts, typescript, react, next, nexjs, vercel"/>
         <meta name="author" content="Mustafa Chaudhry"/>
 
-        <meta property="og:url" content="https://musty.tech"/>
+        <meta property="og:url" content="https://www.musty.tech/"/>
         <meta property="og:type" content="website"/>
         <meta property="og:title" content="Mustafa Chaudhry"/>
         <meta property="og:description" content="Computers yes mmmm"/>
-        <meta property="og:image" content="/og-image.jpg"/>
+        <meta property="og:image" content="/og-image.png"/>
 
         <meta name="twitter:card" content="summary_large_image"/>
         <meta name="twitter:site" content="@musty260"/>
@@ -46,31 +46,16 @@ export default function Home() {
 
       <div className="h-title md:h-title-desktop w-5/6 mx-auto bg-title bg-no-repeat bg-center bg-contain fixed md:static left-1/2 top-1/3 transform md:transform-none -translate-x-1/2 -translate-y-1/2 animate-title dark:animate-title-dark"/>
 
-      {/** 64 high on mobile, 128 on desktop
-      <div className="font-title dark:text-white text-main-dark-gray text-9xl tracking-widest mx-auto hidden md:table">
-        Musty
-      </div>
-      <div className="font-title dark:text-white text-main-dark-gray text-9xl tracking-widest fixed top-35% left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:hidden scale-50">
-        Musty
-      </div>
-      */}
-
       <div className="h-36 hidden md:block"/>
 
-      <div className="md:flex justify-evenly px-96 hidden">
-        <IconRow theme={theme}/>
-      </div>
-      <div className="flex justify-evenly px-96 md:hidden fixed top-57% left-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-50">
+      <div className="flex justify-evenly px-96 fixed md:static top-57% left-1/2 transform md:transform-none -translate-x-1/2 -translate-y-1/2 scale-50">
         <IconRow theme={theme}/>
       </div>
       
 
       <div className="h-10 hidden md:block"/>
 
-      <div className="font-body text-main-dark-gray dark:text-white mx-auto hidden md:table">
-        Site under construction, please check back later :)
-      </div>
-      <div className="font-body text-main-dark-gray dark:text-white mx-auto fixed md:hidden text-center top-3/4 px-4">
+      <div className="font-body text-main-dark-gray dark:text-white mx-auto fixed md:static table text-center top-3/4 px-4">
         Site under construction, please check back later :)
       </div>
 
