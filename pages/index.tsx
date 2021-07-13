@@ -34,9 +34,6 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image"/>
         <meta name="twitter:site" content="@musty260"/>
         <meta name="twitter:creator" content="@musty260"/>
-
-        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet"/>
       </Head>
 
       <div 
