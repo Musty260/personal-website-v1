@@ -52,7 +52,6 @@ export default function Home() {
         <IconRow theme={theme}/>
       </div>
       
-
       <div className="h-10 hidden md:block"/>
 
       <div className="font-body text-main-dark-gray dark:text-white mx-auto fixed md:static table text-center top-3/4 px-4">
