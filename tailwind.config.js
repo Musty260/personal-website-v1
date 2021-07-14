@@ -18,7 +18,8 @@ module.exports = {
       backgroundImage: {
         "light-bulb": "url('/LightBulb_1.png')",
         "light-bulb-dark": "url('/LightBulbDark_1.png')",
-        "title": "url('/Musty1.png')",
+        "title": "url('/Light/Musty1.png')",
+        "title-dark": "url('/Dark/MustyDark1.png')",
       },
       inset: {
         "-45px": "-45px",
@@ -35,7 +36,6 @@ module.exports = {
         "pause-on-hover-dark": "giffyDark 0.9s infinite steps(1) paused",
         "title": "titleGif 0.9s infinite steps(1)",
         "title-dark": "titleGifDark 0.9s infinite steps(1)",
-        "title-blue": "titleGifBlue 0.9s infinite steps(1)",
       },
       keyframes: {
         giffy: {
@@ -51,22 +51,16 @@ module.exports = {
           "100%": { backgroundImage: 'url(/LightBulbDark_1.png)' },
         },
         titleGif: {
-          "0%": { backgroundImage: 'url(/Musty1.png)' },
-          "33%": { backgroundImage: 'url(/Musty2.png)' },
-          "67%": { backgroundImage: 'url(/Musty3.png)' },
-          "100%": { backgroundImage: 'url(/Musty1.png)' },
+          "0%": { backgroundImage: 'url(/Light/Musty1.png)' },
+          "33%": { backgroundImage: 'url(/Light/Musty2.png)' },
+          "67%": { backgroundImage: 'url(/Light/Musty3.png)' },
+          "100%": { backgroundImage: 'url(/Light/Musty1.png)' },
         },
         titleGifDark: {
-          "0%": { backgroundImage: 'url(/MustyDarkAlt1.png)' },
-          "33%": { backgroundImage: 'url(/MustyDarkAlt2.png)' },
-          "67%": { backgroundImage: 'url(/MustyDarkAlt3.png)' },
-          "100%": { backgroundImage: 'url(/MustyDarkAlt1.png)' },
-        },
-        titleGifBlue: {
-          "0%": { backgroundImage: 'url(/MustyBlue1.png)' },
-          "33%": { backgroundImage: 'url(/MustyBlue2.png)' },
-          "67%": { backgroundImage: 'url(/MustyBlue3.png)' },
-          "100%": { backgroundImage: 'url(/MustyBlue1.png)' },
+          "0%": { backgroundImage: 'url(/Dark/MustyDark1.png)' },
+          "33%": { backgroundImage: 'url(/Dark/MustyDark2.png)' },
+          "67%": { backgroundImage: 'url(/Dark/MustyDark3.png)' },
+          "100%": { backgroundImage: 'url(/Dark/MustyDark1.png)' },
         },
       }
     },

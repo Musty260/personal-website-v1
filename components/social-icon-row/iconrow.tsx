@@ -10,7 +10,7 @@ export default function IconRow({theme}: IconProps) {
 
     return (
         <>
-            <a href="mailto:mustyco260@gmail.com" target="_blank" rel="noreferrer" style={{ WebkitTapHighlightColor: "transparent" }} className="odd:mt-24 md:odd:mt-0">
+            <a href="mailto:mchaudhryb@gmail.com" target="_blank" rel="noreferrer" style={{ WebkitTapHighlightColor: "transparent" }} className="odd:mt-24 md:odd:mt-0">
                 <Email theme={theme}/>
             </a>
             <a href="https://github.com/musty260/" target="_blank" rel="noreferrer" style={{ WebkitTapHighlightColor: "transparent" }} className="odd:mt-24 md:odd:mt-0">
