@@ -7,7 +7,6 @@ module.exports = {
         "main-dark-gray": "#211D23"
       },
       fontFamily: {
-        "title": ['"Indie Flower"'],
         "body": ['"Montserrat Alternates"']
       },
       height: {
@@ -16,8 +15,8 @@ module.exports = {
         "title": "75px",
       },
       backgroundImage: {
-        "light-bulb": "url('/LightBulb_1.png')",
-        "light-bulb-dark": "url('/LightBulbDark_1.png')",
+        "light-bulb": "url('/LightBulb_1.webp')",
+        "light-bulb-dark": "url('/LightBulbDark_1.webp')",
         "title": "url('/Light/Musty1.webp')",
         "title-dark": "url('/Dark/MustyDark1.webp')",
       },
@@ -39,16 +38,16 @@ module.exports = {
       },
       keyframes: {
         giffy: {
-          "0%": { backgroundImage: 'url(/LightBulb_1.png)' },
-          "33%": { backgroundImage: 'url(/LightBulb_2.png)' },
-          "67%": { backgroundImage: 'url(/LightBulb_3.png)' },
-          "100%": { backgroundImage: 'url(/LightBulb_1.png)' },
+          "0%": { backgroundImage: 'url(/LightBulb_1.webp)' },
+          "33%": { backgroundImage: 'url(/LightBulb_2.webp)' },
+          "67%": { backgroundImage: 'url(/LightBulb_3.webp)' },
+          "100%": { backgroundImage: 'url(/LightBulb_1.webp)' },
         },
         giffyDark: {
-          "0%": { backgroundImage: 'url(/LightBulbDark_1.png)' },
-          "33%": { backgroundImage: 'url(/LightBulbDark_2.png)' },
-          "67%": { backgroundImage: 'url(/LightBulbDark_3.png)' },
-          "100%": { backgroundImage: 'url(/LightBulbDark_1.png)' },
+          "0%": { backgroundImage: 'url(/LightBulbDark_1.webp)' },
+          "33%": { backgroundImage: 'url(/LightBulbDark_2.webp)' },
+          "67%": { backgroundImage: 'url(/LightBulbDark_3.webp)' },
+          "100%": { backgroundImage: 'url(/LightBulbDark_1.webp)' },
         },
         titleGif: {
           "0%": { backgroundImage: 'url(/Light/Musty1.webp)' },
