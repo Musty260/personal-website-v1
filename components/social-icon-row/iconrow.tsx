@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 import Email from "../social-icons/email";
 import GitHub from "../social-icons/github";
 import LinkedIn from "../social-icons/linkedin";
@@ -7,7 +9,12 @@ type IconProps = {
 }
 
 export default function IconRow({theme}: IconProps) {
+    const [mounted, setMounted] = useState(false)
 
+    useEffect(() => setMounted(true), [])
+  
+    if (!mounted) return null
+  
     return (
         <>
             <a href="mailto:mchaudhryb@gmail.com" target="_blank" rel="noreferrer" style={{ WebkitTapHighlightColor: "transparent" }} className="odd:mt-24 md:odd:mt-0">
