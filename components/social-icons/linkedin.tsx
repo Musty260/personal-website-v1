@@ -5,12 +5,7 @@ type IconProps = {
 }
 
 export default function LinkedIn({theme}: IconProps) {
-    const [mounted, setMounted] = useState(false)
 
-    useEffect(() => setMounted(true), [])
-  
-    if (!mounted) return null
-    
     return (
         <div>
             <svg className="h-100px mx-1.5 md:mx-8 opacity-60 hover:opacity-100 duration-75 table m-auto svg-inline--fa fa-linkedin-in fa-w-14" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in"  role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
