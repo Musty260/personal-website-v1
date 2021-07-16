@@ -18,8 +18,8 @@ module.exports = {
       backgroundImage: {
         "light-bulb": "url('/LightBulb_1.png')",
         "light-bulb-dark": "url('/LightBulbDark_1.png')",
-        "title": "url('/Light/Musty1.png')",
-        "title-dark": "url('/Dark/MustyDark1.png')",
+        "title": "url('/Light/Musty1.webp')",
+        "title-dark": "url('/Dark/MustyDark1.webp')",
       },
       inset: {
         "-45px": "-45px",
@@ -51,16 +51,16 @@ module.exports = {
           "100%": { backgroundImage: 'url(/LightBulbDark_1.png)' },
         },
         titleGif: {
-          "0%": { backgroundImage: 'url(/Light/Musty1.png)' },
-          "33%": { backgroundImage: 'url(/Light/Musty2.png)' },
-          "67%": { backgroundImage: 'url(/Light/Musty3.png)' },
-          "100%": { backgroundImage: 'url(/Light/Musty1.png)' },
+          "0%": { backgroundImage: 'url(/Light/Musty1.webp)' },
+          "33%": { backgroundImage: 'url(/Light/Musty2.webp)' },
+          "67%": { backgroundImage: 'url(/Light/Musty3.webp)' },
+          "100%": { backgroundImage: 'url(/Light/Musty1.webp)' },
         },
         titleGifDark: {
-          "0%": { backgroundImage: 'url(/Dark/MustyDark1.png)' },
-          "33%": { backgroundImage: 'url(/Dark/MustyDark2.png)' },
-          "67%": { backgroundImage: 'url(/Dark/MustyDark3.png)' },
-          "100%": { backgroundImage: 'url(/Dark/MustyDark1.png)' },
+          "0%": { backgroundImage: 'url(/Dark/MustyDark1.webp)' },
+          "33%": { backgroundImage: 'url(/Dark/MustyDark2.webp)' },
+          "67%": { backgroundImage: 'url(/Dark/MustyDark3.webp)' },
+          "100%": { backgroundImage: 'url(/Dark/MustyDark1.webp)' },
         },
       }
     },
