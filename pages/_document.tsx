@@ -16,13 +16,6 @@ class MyDocument extends Document {
           <link rel="preload" as="image" href="/Dark/MustyDark1.webp"/>
           <link rel="preload" as="image" href="/Dark/MustyDark2.webp"/>
           <link rel="preload" as="image" href="/Dark/MustyDark3.webp"/>
-
-          <link rel="preload" as="image" href="/LightBulb_1.webp"/>
-          <link rel="preload" as="image" href="/LightBulb_2.webp"/>
-          <link rel="preload" as="image" href="/LightBulb_3.webp"/>
-          <link rel="preload" as="image" href="/LightBulbDark_1.webp"/>
-          <link rel="preload" as="image" href="/LightBulbDark_2.webp"/>
-          <link rel="preload" as="image" href="/LightBulbDark_3.webp"/>
         </Head>
         <body className="h-screen w-screen bg-white dark:bg-main-dark-gray overflow-x-hidden relative">
           <Main />
