@@ -16,7 +16,7 @@ export default function Home() {
   if (!mounted) return null
 
   return (
-    <div>
+    <div className={(theme == "light" ? "bg-white" : "bg-main-dark-gray") + " " + "h-screen w-screen overflow-x-hidden relative"}>
 
       <Head>
         <title>Mustafa Chaudhry</title>
