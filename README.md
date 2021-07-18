@@ -1,3 +1,15 @@
+hi guys this is my really good personal website immense amounts of time and effort were put into this
+
+hosted on
+
+https://musty.me
+
+https://musty.tech
+
+https://musty.cc
+
+I couldn't pick one so I just hosted on all 3 for now lol
+# nextjs stuf below
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
