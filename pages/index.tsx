@@ -35,7 +35,7 @@ export default function Home() {
   useEffect(() => createWebring())
 
   return (
-    <div className={(theme == "light" ? "bg-white" : "bg-main-dark-gray") + " " + "h-screen w-screen overflow-x-hidden relative"}>
+    <div className="bg-white dark:bg-main-dark-gray h-screen w-screen overflow-x-hidden relative">
 
       <Head>
         <title>Mustafa Chaudhry</title>
