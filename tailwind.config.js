@@ -9,6 +9,9 @@ module.exports = {
       fontFamily: {
         "body": ['"Montserrat Alternates"']
       },
+      fontSize: {
+        "xxs": "0.5rem",
+      },
       height: {
         "100px": "100px",
         "title-desktop": "150px",
@@ -19,6 +22,8 @@ module.exports = {
         "light-bulb-dark": "url('/LightBulbDark_1.webp')",
         "title": "url('/Light/Musty1.webp')",
         "title-dark": "url('/Dark/MustyDark1.webp')",
+        "webring": "url('/WebringIcon.webp')",
+        "webring-dark": "url('/WebringIconDark.webp')",
       },
       inset: {
         "-45px": "-45px",

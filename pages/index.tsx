@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Image from "next/image";
 
 import { useEffect, useState } from "react";
 
@@ -11,9 +10,29 @@ export default function Home() {
   const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
-  useEffect(() => setMounted(true), [])
+  // Function "createWebring()" below modified from https://webring.hackclub.com/public/embed.min.js - Original file on GitHub: https://github.com/hackclub/webring/blob/master/public/embed.js
+  // All credit and rights for this code snippet belong to Hack Club and their contributors
+  // Specifically, Googol (https://github.com/googol88) and Steven Conaway (https://github.com/SConaway) were the two contributors listed for this file (embed.js/embed.min.js)
+  function createWebring() {
+    var h=document.getElementById("webring-wrapper"),g=document.createElement("style");
+    g.innerHTML=".webring-anchor{font-size:24px;color:rgba(132,146,166,.8);text-decoration:none;transition:color .5s}.webring-anchor:hover{color:#8492a6;text-decoration:none}.webring-logo{background-repeat:no-repeat;background-position:top left;background-size:contain;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;display:inline-block;width:36px;height:36px;margin:0 4px;vertical-align:middle}";
+    if (h === null) {} else {h.appendChild(g)};
+    var k=document.location.href.toLowerCase(),f=0,c=0,d=0,l=document.getElementsByTagName("a").namedItem("previousBtn"),m=document.getElementsByTagName("a").namedItem("nextBtn"),b=new XMLHttpRequest;b.open("GET","https://webring.hackclub.com/public/members.json");
+    b.responseType="json";
+    b.send();
+    b.onload=function() {
+      for(var a=b.response,e=0;e<a.length;e++)
+          if(k==a[e].url.toLowerCase())
+              {f=e;break}c=f-1;-1==c&&(c=a.length-1);
+      if (l === null) {} else {l.href=a[c].url};
+      d=f+1;
+      d==a.length&&(d=0);
+      if (m === null) {} else {m.href=a[d].url};
+    }
+  }
+  // :)
 
-  if (!mounted) return null
+  useEffect(() => createWebring())
 
   return (
     <div className={(theme == "light" ? "bg-white" : "bg-main-dark-gray") + " " + "h-screen w-screen overflow-x-hidden relative"}>
@@ -58,7 +77,13 @@ export default function Home() {
         Site under construction, please check back later :)
       </div>
 
-      <footer className={(theme == "light" ? "text-main-dark-gray opacity-100" : "text-white opacity-60") + " " + "fixed right-2 bottom-1 w-full font-body text-xs text-right"}>
+      <div id="webring-wrapper" className="fixed bottom-3 md:bottom-7 left-4 md:left-6 transform scale-110 md:scale-125">
+        <a href="https://webring.hackclub.com/" id="previousBtn" className="webring-anchor" title="Previous">‹</a>
+        <a href="https://webring.hackclub.com/" className={(theme == "light" ? "bg-webring" : "bg-webring-dark")+ " " + "webring-logo"} title="Hack Club Webring"></a>
+        <a href="https://webring.hackclub.com/" id="nextBtn" className="webring-anchor" title="Next">›</a>
+      </div>
+
+      <footer className={(theme == "light" ? "text-main-dark-gray opacity-100" : "text-white opacity-60") + " " + "fixed right-2 bottom-1 w-full font-body text-xxs md:text-xs text-right"}>
         Icons graciously provided by <a href="https://fontawesome.com/license" target="_blank" rel="noreferrer" className="underline">FontAwesome</a>
       </footer>
       
