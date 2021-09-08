@@ -9,11 +9,50 @@ import IconRow from '../components/social-icon-row/iconrow';
 
 export default function Home() {
   const { theme, setTheme } = useTheme()
-  const [mounted, setMounted] = useState(false)
+  const [isDarkTheme, setIsDarkTheme] = useState(true);
 
-  useEffect(() => setMounted(true), [])
+  const handleToggle = () => {
+    setIsDarkTheme(!isDarkTheme);
+  };
 
-  if (!mounted) return null
+  const getMediaQueryPreference = () => {
+    const mediaQuery = "(prefers-color-scheme: dark)";
+    const mql = window.matchMedia(mediaQuery);
+    const hasPreference = typeof mql.matches === "boolean";
+
+    if (hasPreference) {
+      return mql.matches ? "dark" : "light";
+    }
+  };
+
+  const storeUserSetPreference = (pref:string) => {
+    localStorage.setItem("theme", pref);
+  };
+
+  const getUserSetPreference = () => {
+    return localStorage.getItem("theme");
+  };
+
+  
+  useEffect(() => {
+    const userSetPreference = getUserSetPreference();
+    if (userSetPreference !== null) {
+      setIsDarkTheme(userSetPreference === "dark");
+    } else {
+      const mediaQueryPreference = getMediaQueryPreference();
+      setIsDarkTheme(mediaQueryPreference === "dark");
+    }
+  }, []);
+
+  useEffect(() => {
+    if (isDarkTheme !== undefined) {
+      if (isDarkTheme) {
+        storeUserSetPreference("dark");
+      } else {
+        storeUserSetPreference("light");
+      }
+    }
+  }, [isDarkTheme]);
 
   return (
     <div className={(theme == "light" ? "bg-white" : "bg-main-dark-gray") + " " + "h-screen w-screen overflow-x-hidden relative"}>
@@ -39,7 +78,7 @@ export default function Home() {
       <div 
         style={{ width:"97px", height:"226px", WebkitTapHighlightColor: "transparent" }}
         className={(theme == "light" ? "animate-gif md:hover:animate-pause-on-hover bg-light-bulb" : "animate-gif-dark md:hover:animate-pause-on-hover-dark bg-light-bulb-dark") + " " + "fixed right-1/2 md:right-64 transform md:transform-none translate-x-1/2 md:translate-x-0 cursor-pointer bg-no-repeat bg-center bg-cover scale-60 -top-45px md:top-0"}
-        onClick={() => setTheme( theme == "dark" ? "light" : "dark" )}
+        onClick={() => {handleToggle}}
       />
 
       <div className="h-72 hidden md:block"/>

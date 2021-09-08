@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document'
+import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 class MyDocument extends Document {
 
@@ -18,6 +18,11 @@ class MyDocument extends Document {
           <link rel="preload" as="image" href="/Dark/MustyDark3.webp"/>
         </Head>
         <body>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: customScript,
+            }}
+          />
           <Main />
           <NextScript />
         </body>
@@ -25,5 +30,9 @@ class MyDocument extends Document {
     )
   }
 }
+
+const customScript = `
+  console.log("YES CUSTOM SCRIPT");
+`
 
 export default MyDocument
